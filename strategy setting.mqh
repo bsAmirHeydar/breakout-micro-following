@@ -85,11 +85,11 @@ public:
                if(price >= buyEntry + buyStopValue * 0.2)
                  {
                  
-                  trailAll(sym, 1, price - buyStopValue * 0.1);
+                  trailAll(sym, 1, price - buyStopValue * 0.2);
                  }
               }
             else
-               trailAll(sym, 1, price - buyStopValue * 0.1);
+               trailAll(sym, 1, price - buyStopValue * 0.2);
            }
          if(buyEntry == 0.0)
            {
@@ -111,11 +111,11 @@ public:
                  {
                   if(price <= sellEntry + sellStopValue * 0.2)
                     {
-                     trailAll(sym, -1, price + sellStopValue * 0.1);
+                     trailAll(sym, -1, price + sellStopValue * 0.2);
                     }
                  }
                else
-                  trailAll(sym, -1, price + sellStopValue * 0.1);
+                  trailAll(sym, -1, price + sellStopValue * 0.2);
               }
             if(sellEntry == 0.0)
               {
